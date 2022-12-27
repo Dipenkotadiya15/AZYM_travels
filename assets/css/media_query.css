@@ -1,0 +1,597 @@
+@media screen and (max-width: 1599px) {
+  .img_up {
+    padding: 8px 0 4px;
+    margin: 0 50px;
+  }
+
+  /* .p1 {
+    left: 30%;
+  } */
+
+  .img_content1 { margin-right: 122px; }
+
+  .offer{
+    top: 52%;
+    left: 32%;
+  }
+
+  /* .hotel_content1, .hotel_content3 {
+    padding-left: 155px;
+  } */
+/* 
+  .offer1 { 
+    top: 24%; 
+    left: 41%;
+   } */
+
+  .flower { width: 230px; }
+ }
+
+
+/* ================================================================================================== */
+@media screen and (max-width: 1399px) {
+    .container{ max-width: 1140px; }
+
+    .activity2 .img {
+        height: 150px;
+        width: 140px;
+    }
+
+    .img_up {
+      padding: 8px 7px 4px;
+    }
+
+    /* .p1 { 
+      left: 26%; 
+    } */
+
+    .img_content1 { margin-right: 110px; }
+
+    
+  /* .offer1{
+      top: 25%;
+      left: 40%;
+      height: 90px;
+      width: 85px;
+    }
+
+    .hotel_content1, .hotel_content3 {
+      margin-right: 10px;
+    }
+
+    .hotel_content2, .hotel_content4 {
+      margin-left: 10px;
+    }
+
+    .hotel_content3, .hotel_content4 {
+      margin-top: -50px;
+    } */
+
+    /* .hotel_content1, .hotel_content3 {
+      padding-left: 150px;
+    } */
+
+    /* .offer1 { left: 41%; } */
+
+    .offer1 {
+      top: 32%;
+      left: 32%;
+    }
+
+    .flower { width: 180px; }
+
+    .footer_bg1 {
+      margin-top: -5px;
+    }
+
+  }
+
+/* ================================================================================================== */
+  @media screen and (max-width: 1199px) {
+    .container{ 
+        max-width: 960px; 
+    }
+
+    /* 1. Navbar  */
+    .ul3 { margin-left: 25px; }
+
+    li a {
+        padding: 7px;
+        margin: 7px 5px;
+    }
+
+    /* 2. BG IMAGE  */
+    .bgimg h1 {
+        font-size: 62px;
+        top: 38%;
+    }
+
+    /* 3. Feature Destination  */
+    .destination_content{
+        display: flex;
+    }
+
+    .border1_1 {
+      margin: 0 25px;
+    }
+
+    .img_up {
+      margin: 0;
+    }
+
+    
+
+
+    /* 4. Activity Section  */
+
+    .img_content { width: 50%; }
+
+    .img_content1 { 
+      margin-right: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .activity2 .img {
+        height: 155px;
+        width: 120px;
+    }
+
+    .activity1 p {
+      margin: 0 0 5px 0;
+    }
+
+    .offer {
+      top: 52%;
+      left: 29%;
+    }
+
+    .event_image {
+      top: 7%;
+      width: 325px;
+    }
+
+    /* .hotel_content1, .hotel_content3 {
+      padding-left: 50px;
+    } */
+
+    /* .offer1 { left: 39%; } */
+
+    .offer1 {
+      top: 28%;
+      left: 30%;
+    }
+
+    .flower { width: 150px; }
+  }
+
+/* ================================================================================================== */
+  @media screen and (max-width: 991px) {
+    .container{ max-width: 720px; }
+
+    /* 1. Navbar  */
+    .ul1 { display: none; }
+
+    .nav1 {
+        /* display: block; */
+        display: none;
+        text-align: center;
+    }
+
+    .ul2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul2 a {
+        padding: 10px;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .ul3 .toggle {
+      display: block;
+      align-self: center;
+      margin-left: 15px;
+      font-size: 25px;
+    }
+
+    /* 2. BG IMAGE  */
+    .bgimg h1 {
+        font-size: 48px;
+        top: 30%;
+    }
+
+    .search {
+      display: none;
+    }
+
+   .serviceimg {
+    display: none;
+   }
+
+   .service {
+      margin-top: 10px;
+   }
+
+    .border1_1 {
+      margin: 0 10px;
+    }
+
+    .activity1 {
+      width: 100%;
+    }
+
+    .activity2 { 
+      width: 100%;
+    }
+
+    .img_content {
+       width: 33.33%;
+    }
+
+    .activity2 .img {
+      height: 135px;
+      width: 100px;
+    }
+
+    .content_a {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .offer {
+      top: 32%;
+      left: 52%;
+    }
+
+    .content_a2 h2 {
+      margin-top: 0;
+    }
+
+    .content_a2 button {
+      margin-bottom: 20px;
+    }
+
+
+    /* .service_bg img {
+      display: none;
+    } */
+
+    .service_11 {
+      width: 33.33%;
+    }
+    /* .service_4 {
+      margin-top: 20px;
+    } */
+
+    .event_image {
+      top: 10%;
+      width: 245px;
+    }
+
+    .visit_img1 {
+      margin-right: 20px;
+    }
+
+    .visit_img p {
+      width: 218px;
+    }
+    .inqury_form {
+      margin-top: 25px;
+    }
+    .footer_content .f1 {
+      width: 33.33%;
+    }
+
+    .footer_bg {
+      padding: 120px 0;
+    }
+    .bg1_content .abc2, .bg1_content .abc3 {
+      margin-top: 5px;
+    }
+
+    .hotel1 {
+      width: 100%;
+    }
+    .hotel2 {
+      width: 100%;
+    }
+
+    /* .hotel_content1, .hotel_content3 {
+      padding-left: 150px;
+    }
+
+    .hotel_content1, .hotel_content2 {
+      margin-top: 25px;
+    } */
+
+    
+
+    /* .offer1 { 
+      top: 32%;
+      left: 41%; 
+    } */
+
+    .offer1 {
+      top: 36%;
+      left: 38%;
+    }
+    .flower { width: 220px; }
+
+    .form_content {
+      justify-content: center;
+    }
+  }
+
+/* ================================================================================================== */
+  @media screen and (max-width: 767px) {
+    .container{ max-width: 540px; }
+
+    /* 2. BG IMAGE  */
+    .bgimg h1 {
+        font-size: 36px;
+        top: 23%;
+    }
+
+    .border1 {
+      width: 50%;
+  }
+
+  .border3 {
+    margin-top: 25px;
+  }
+
+  .bg_plane, .visit_bg {
+    display: contents;
+  }
+
+  .offer {
+    top: 32%;
+    left: 50%;
+  }
+
+  li a {
+    font-size: 20px;
+  }
+
+  .Available_tour {
+    padding: 15px 25px;
+    font-size: 30px;
+  }
+
+  .service_11 {
+    width: 50%;
+  }
+
+  /* .service_3{
+    margin-top: 20px;
+  } */
+
+    /* .seervice1_2, .seervice1_4 {
+      padding-left: 30px;
+    } */
+
+  .event_card {
+    width: 50%;
+  }
+
+  .event1_3 {
+    margin-top: 20px;
+  }
+
+  .event_image {
+      top: 9%;
+      width: 190px; 
+  }
+
+  .event_card1_2 {
+    z-index: 1;
+  }
+  .visit_img {
+    width: 50%;
+  }
+
+  .visit_img p {
+    width: 242px;
+  }
+  .footer_content .f1 {
+    width: 50%;
+  }
+
+  .f1_3, .f1_4 {
+    margin-top: 35px;
+  }
+
+  /* .hotel_content1, .hotel_content3 {
+    padding-left: 50px;
+  } */
+
+  /* .offer1 {
+    left: 37%; 
+  } */
+
+  .offer1 {
+    top: 32%;
+    left: 36%;
+  }
+  .flower { width: 132px; }
+  }
+
+/* ================================================================================================== */
+  @media screen and (max-width: 575px) {
+    .container{ max-width: 100%; }
+
+    /* 1. Navbar  */
+    .signupbtn {
+        display: none;
+    }
+    
+    .signupdiv {
+        display: block;
+        /* text-align: center; */
+    }
+    .signupdiv button {
+        font-size: 22px;
+        background-color: #1C89ED;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        margin: 10px 0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+    }
+
+    .ul2 {
+        display: block;
+    }
+
+    /* 2. BG IMAGE  */
+    .bgimg h1 {
+        font-size: 26px;
+        /* top: 30%; */
+    }
+
+   
+    .booking {
+      margin-top: 0;
+    }
+    
+
+    .border1 {
+      width: 100%;
+    }
+
+    .border1_1 {
+      /* margin: 0 140px; */  
+      width: 100%;
+      max-width: 200px;
+      margin: auto;
+    }
+
+    .flower, .offer1 {
+      display: none;
+    }
+
+    .hotel2_1 {
+      width: 100%;
+    }
+
+    .hotel2 {
+      padding: 0 40px;
+    }
+
+    .border2 {
+      margin-top: 25px;
+    }
+
+    
+    .inqury_form input {
+      width: 330px;
+    }
+    .inqury_form button {
+      margin-left: 96px;
+    }
+
+  }
+
+/* ================================================================================================== */
+  @media screen and (max-width: 425px) {
+    .container{ max-width: 100%; }
+
+    .img_content {
+      width: 50%;
+   }
+
+   .bgimg h1 {
+    font-size: 26px;
+    top: 15%;
+}
+   .Available_tour {
+    font-size: 22px;
+   }
+   .offer {
+    top: 29%;
+    left: 51%;
+    height: 50px;
+    width: 50px;
+   }
+
+  .service_11 {
+    width: 100%;
+  }
+
+  /* .service_2 {
+    margin-top: 20px;
+  } */
+
+  /* .service_content p {
+    margin: 0 auto;
+  } */
+
+
+  .img_up {
+    border-radius: 25px;
+  }
+
+  .p1 {
+  font-size: 12px;
+  }
+
+  .event_card {
+    width: 100%;
+  }
+
+  .event1_2 {
+    margin-top: 20px;
+  }
+
+  .event_image {
+      top: 6%;
+      width: 210px; 
+  }
+
+  .event_card1_1 {
+    z-index: 1;
+  }
+
+  .event1_1 {
+    margin-top: 20px;
+  }
+
+  .visit_img {
+    width: 100%;
+  }
+
+  .visit_img1 {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .visit_img img {
+    margin: 10px 0; 
+  }
+
+  .visit_img p {
+    margin: 0 auto;
+  }
+
+  .footer_content .f1 {
+    width: 100%;
+  }
+
+  .f1_3, .f1_4 {
+    margin-top: 0;
+  }
+  .f1_1 {
+    margin-top: 100px;
+  }
+
+  .footer_bg1 {
+    margin-top: -10px;
+  }
+
+
+
+
+  }

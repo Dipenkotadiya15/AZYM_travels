@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawsome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jquery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+
+    <title>AZYM travels index</title>
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <div class="container">
+        <div class="nav">
+            <div class="logoimg">
+                <img src="./assets/ss/Azym-Travels-Logo 1.png" alt="...">
+            </div>
+            <div class="navbar">
+
+                <ul class="ul1">
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Packges</a></li>
+                    <li><a href="#">Deals</a></li>
+                </ul>
+
+                <ul class="ul3">
+                    <img src="./assets/ss/search_icon.jpg" alt="../" class="search">
+                    <button class="signupbtn">Sign up/Sign in</button>
+                    <span class="toggle" onclick="toggler()"><i class="fa-solid fa-bars"></i></span>
+                </ul>
+            </div>
+        </div>
+        <div class="nav1" id="nav1">
+            <ul class="ul2">
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Packges</a></li>
+                <li><a href="#">Deals</a></li>
+            </ul>
+        </div>
+        <div class="signupdiv">
+            <button>Sign up/Sign in</button>
+        </div>
+    </div>
+
+    <!-- BG IMAGE -->
+    <div class="bgimg">
+        <img src="./assets/ss/bg.jpg" alt="..." class="bg_image">
+        <h1>Your Journey Begins</h1>
+
+
+        <div class="container">
+            <div class="booking" id="tabs-1">
+                <ul style="justify-content: center;">
+                    <li><a href="#tabs-2">Flight Booking</a></li>
+                    <li><a href="#tabs-3">Hotel Booking</a></li>
+                    <li><a href="#tabs-4">Pickup and drop service</a></li>
+                </ul>
+                <hr>
+
+                <div id="tabs-2">
+                    <form action="" class="main_grid">
+                        <div class="grid-item item1">
+                            <label for="">Location</label>
+                            <input type="text" name="location" style="width: 300px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Departure Date</label>
+                            <input type="text" name="Departure_date" style="width: 200px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Return Date</label>
+                            <input type="text" name="Return_date" style="width: 200px;">
+                        </div>
+                        <div class="grid-item" style="align-self: center;">
+                            <button class="searchbtn">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="tabs-3">
+                    <form action="" class="main_grid">
+                        <div class="grid-item item1">
+                            <label for="">Hotel name & City</label>
+                            <input type="text" name="Hname" style="width: 300px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Check-in</label>
+                            <input type="text" name="Check-in" style="width: 200px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Check-out</label>
+                            <input type="text" name="Check-out" style="width: 200px;">
+                        </div>
+                        <div class="grid-item" style="align-self: center;">
+                            <button class="searchbtn">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="tabs-4">
+                    <form action="" class="main_grid">
+                        <div class="grid-item item1">
+                            <label for="">Name</label>
+                            <input type="text" name="name" style="width: 300px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Pickup Address</label>
+                            <input type="text" name="pickup" style="width: 200px;">
+                        </div>
+                        <div class="grid-item item1">
+                            <label for="">Destintion Address</label>
+                            <input type="text" name="Destination" style="width: 200px;">
+                        </div>
+                        <div class="grid-item" style="align-self: center;">
+                            <button class="searchbtn">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured destination  -->
+    <div class="title">
+        <h2>Featured Destination</h2>
+        <img src="./assets/ss/border_underline_1.png" alt="...">
+    </div>
+
+    <div class="bg_plane">
+        <div class="container">
+            <div class="destination_content">
+                <div class="border1">
+                    <div class="border1_1">
+                        <p class="p1">London</p>
+                        <div class="img_up">
+                            <img src="./assets/ss/country(1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="border1 border2">
+                    <div class="border1_1">
+                        <p class="p1">Italy</p>
+                        <div class="img_up">
+                            <img src="./assets/ss/country(2).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="border1 border3">
+                    <div class="border1_1">
+                        <p class="p1">Japan</p>
+                        <div class="img_up">
+                            <img src="./assets/ss/country(3).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Section -->
+    <div class="activity">
+        <div class="activity1">
+            <h2>Activites</h2>
+            <img src="./assets/ss/border_underline_2.png" alt="..." style="margin-bottom: 30px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aspernatur nemo commodi ad iste beatae
+                earum, maxime praesentium.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aspernatur nemo commodi ad iste beatae
+                earum, maxime praesentium.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="activity2">
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (1).png" alt="../">
+                    <p>Hot Air ballon Ride</p>
+                </div>
+            </div>
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (2).png" alt="../">
+                    <p>Kayaking Trips</p>
+                </div>
+            </div>
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (3).png" alt="../">
+                    <p>Garocopter</p>
+                </div>
+            </div>
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (4).png" alt="../">
+                    <p>Desert Adventures</p>
+                </div>
+            </div>
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (5).png" alt="../">
+                    <p>Piper Archer</p>
+                </div>
+            </div>
+            <div class="img_content">
+                <div class="img_content1">
+                    <img src="./assets/ss/Activity (6).png" alt="../">
+                    <p>Sea Adventures</p>
+                </div>
+            </div>
+            <img src="./assets/ss/activity boat.png" alt="..." class="img">
+        </div>
+    </div>
+
+    <!-- bg img 1 -->
+    <div class="bg_beach">
+        <div class="container">
+            <div class="content_a">
+                <div class="content_a1">
+                    <img src="./assets/ss/bg_beach.png" alt="...">
+                </div>
+                <div class="content_a2">
+                    <h2>Italy</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus quas esse ex aut enim facilis
+                        atque pariatur nemo!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button>View More</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/ss/off_60.png" alt="..." class="offer">
+        <p class="Available_tour">Available tour</p>
+    </div>
+
+    <!-- Service -->
+    <div class="title">
+        <h2>Service</h2>
+        <img src="./assets/ss/border_underline_3.png" alt="...">
+    </div>
+
+    <div class="service_bg">    
+        <img src="./assets/ss/bg_plane(2).png" alt="" class="serviceimg">
+        <div class="container">
+            <div class="service">
+                <!-- <div class="service_1">
+                    <p>Flight Booking</p>
+                    <div class="service_content service_1a">
+                        <img src="./assets/ss/service (1).png" alt="...">
+                    </div>
+                </div>
+                <div class="service_1 seervice1_2">
+                    <p>Airport Taxi</p>
+                    <div class="service_content service_2">
+                        <img src="./assets/ss/service (2).png" alt="...">
+                    </div>
+                </div>
+                <div class="service_1">
+                    <p>Luxury Cruise</p>
+                    <div class="service_content service_3">
+                        <img src="./assets/ss/service (3).png" alt="...">
+                    </div>
+                </div>
+                <div class="service_1 seervice1_4">
+                    <p>Visa Assurance</p>
+                    <div class="service_content service_4">
+                        <img src="./assets/ss/service (4).png" alt="...">
+                    </div>
+                </div> -->
+
+                <div class="service_11">
+                    <div class="service_11_1">
+                        <div class="service_content11">
+                            <p class="abc">Flight Booking</p> 
+                            <img src="./assets/ss/service (1).png" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="service_11">
+                    <div class="service_11_1">
+                        <div class="service_content11">
+                            <p class="abc">Airport Taxi</p>                        
+                            <img src="./assets/ss/service (2).png" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="service_11">
+                    <div class="service_11_1">
+                        <div class="service_content11">
+                            <p class="abc">Luxury Cruise</p>                        
+                            <img src="./assets/ss/service (3).png" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="service_11">
+                    <div class="service_11_1">
+                        <div class="service_content11">
+                            <p class="abc">Visa Assurance</p>                       
+                            <img src="./assets/ss/service (4).png" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Event -->
+    <div class="bg_event">
+        <div class="container">
+
+            <div class="event_title">
+                <h2>Upcoming Event</h2>
+                <img src="./assets/ss/border_underline_4.png" alt="">
+            </div>
+            <img src="./assets/ss/Group 225.png" alt="../" class="event_image">
+
+            <div class="event_content">
+                <div class="event_card event_card1_1">
+                    <div class="event1 event1_1">
+                        <img src="./assets/ss/event (1).png" alt="../">
+                        <p>Event1</p>
+                        <p style="margin-bottom: 5px;">Price starts from: $10.00</p>
+                        <div class="card_footer">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Location city, location</p>
+                        </div>
+                        <div class="card_footer" style="margin: 0;">
+                            <span><i class="fa-regular fa-calendar-days"></i></span>
+                            <p>October 25,2021 08:04 PM - November 05,2021 08:04 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_card event_card1_2">
+                    <div class="event1 event1_2">
+                        <img src="./assets/ss/event (2).png" alt="../">
+                        <p>Event2</p>
+                        <p style="margin-bottom: 5px;">Price starts from: $20.00</p>
+                        <div class="card_footer">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Location city, location</p>
+                        </div>
+                        <div class="card_footer" style="margin: 0;">
+                            <span><i class="fa-regular fa-calendar-days"></i></span>
+                            <p>October 25,2021 08:04 PM - November 05,2021 08:04 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_card event_card1_3" style="z-index: 1;">
+                    <div class="event1 event1_3">
+                        <img src="./assets/ss/event (3).png" alt="../">
+                        <p>Event3</p>
+                        <p style="margin-bottom: 5px;">Price starts from: $40.00</p>
+                        <div class="card_footer">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Location city, location</p>
+                        </div>
+                        <div class="card_footer" style="margin: 0;">
+                            <span><i class="fa-regular fa-calendar-days"></i></span>
+                            <p>October 25,2021 08:04 PM - November 05,2021 08:04 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Place to Visit  -->
+    <div class="title">
+        <h2>Place to Visit</h2>
+        <img src="./assets/ss/border_underline_5.png" alt="../">
+    </div>
+
+    <div class="visit_bg">
+        <div class="container">
+            <div class="visit_content">
+                <div class="visit_img">
+                    <div class="visit_img1">
+                        <img src="./assets/ss/place (1).png" alt="../">
+                        <p>National Museum of Qatar</p>
+                    </div>
+                </div>
+                <div class="visit_img">
+                    <div class="visit_img1">
+                        <img src="./assets/ss/place (2).png" alt="../">
+                        <p>Katara</p>
+                    </div>
+                </div>
+                <div class="visit_img">
+                    <div class="visit_img1">
+                        <img src="./assets/ss/place (3).png" alt="../">
+                        <p>The Pearl Qatar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hotel in Qatar -->
+    <!-- <div class="hotel">
+        <div class="hotel1">
+            <h2>Hotel in Qatar</h2>
+            <img src="./assets/ss/border_underline_6.png" alt="../">
+            <p style="margin-top: 24px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis, excepturi
+                ipsam delectus repellat rerum quidem odit cupiditate voluptatem magni? Lorem, ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est?</p>
+            <p style="font-weight: 600; margin-top: 24px;">Start From</p>
+            <p style="font-weight: 600;">$20.00</p>
+            <button>Book Now</button>
+        </div>
+        <div class="hotel2">
+            <div class="hotel2_1">
+                <div class="hotel_content hotel_content1">
+                    <img src="./assets/ss/hotel (1).png" alt="../">
+                    <p>The St. Regis Doha</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content hotel_content2">
+                    <img src="./assets/ss/hotel (2).png" alt="../">
+                    <p>Sheraton Hotel</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content hotel_content3">
+                    <img src="./assets/ss/hotel (3).png" alt="../">
+                    <p>Grand Hyatt</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content hotel_content4">
+                    <img src="./assets/ss/hotel (4).png" alt="../">
+                    <p>Torch Doha</p>
+                </div>
+            </div>
+            <img src="./assets/ss/40% off.png" alt="../" class="offer1">
+            <img src="./assets/ss/flower.png" alt="../" class="flower">
+        </div>
+    </div> -->
+
+    <div class="hotel">
+        <div class="hotel1">
+            <div class="hotel1_1">
+                <h2>Hotel in Qatar</h2>
+                <img src="./assets/ss/border_underline_6.png" alt="../">
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis, excepturi
+                    ipsam delectus repellat rerum quidem odit cupiditate voluptatem magni? Lorem, ipsum.</p>
+                <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est?</p>
+                <p class="para3">Start From</p>
+                <p class="para4">$20.00</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="hotel2">
+            <div class="hotel2_1">
+                <div class="hotel_content">
+                    <img src="./assets/ss/hotel (1).png" alt="../">
+                    <p>The St. Regis Doha</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content">
+                    <img src="./assets/ss/hotel (2).png" alt="../">
+                    <p>Sheraton Hotel</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content">
+                    <img src="./assets/ss/hotel (3).png" alt="../">
+                    <p>Grand Hyatt</p>
+                </div>
+            </div>
+            <div class="hotel2_1">
+                <div class="hotel_content">
+                    <img src="./assets/ss/hotel (4).png" alt="../">
+                    <p>Torch Doha</p>
+                </div>
+            </div>
+            <img src="./assets/ss/off_40.png" alt="../" class="offer1">
+            <img src="./assets/ss/flower.png" alt="../" class="flower">
+        </div>
+    </div>
+
+    <!-- Form  -->
+    <div class="container">
+        <div class="form_content">
+            <div class="form_img">
+                <img src="./assets/ss/g10.png" alt="../">
+            </div>
+
+            <div class="inqury_form">
+                <h2>Visitor Inqury Form</h2>
+                <div>
+                    <p>Your Name</p>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <p>Phone Number</p>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <p>Message</p>
+                    <input type="text" name="name">
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <!-- <div class="footer_bg">
+        <img src="./assets/ss/footer_bg(1).png" alt="">
+        <img src="./assets/ss//footer_bg(2).png" alt="" style="margin-top: -50px;">
+        <img src="./assets/ss/chat1.png" alt="../" class="chat1">
+        <div class="f1">
+            <p class="p">About us</p>
+            <a href="#">CSR Policy</a>
+            <a href="#">Travel Guidelines</a>
+            <a href="#">Career</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Loyalty program</a>
+        </div>
+        <div class="f2">
+            <p class="p">Activity</p>
+            <a href="#">Sea Adventures</a>
+            <a href="#">Pipar Archar</a>
+            <a href="#">Gyrocopter</a>
+            <a href="#">Hot Air Balloon Ride</a>
+            <a href="#">Desert Adventures</a>
+            <a href="#">Kayaking Trips</a>
+        </div>
+        <div class="f3">
+            <p class="p">Services</p>
+            <a href="#">Airline Tickets</a>
+            <a href="#">Hotel Booking</a>
+            <a href="#">Holiday Packages</a>
+            <a href="#">Visa Processing</a>
+            <a href="#">Discount Offers</a>
+            <a href="#">Travel Insurance</a>
+            <a href="#">International Driving Licence</a>
+            <a href="#">Local Tourism</a>
+            <a href="#">cruise</a>                        
+        </div>
+        <div class="f4">
+            <p class="p">Need Help</p>
+            <p>Call Us</p>
+            <a href="#">677843469656</a>
+            <p>Email For Us</p>
+            <a href="#">custom@hfju.com</a>
+            <p>Follw Us</p>
+            <div style="color: #fff;">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+            </div>             
+        </div>
+    </div> -->
+
+    <div class="footer_bg">
+        <div class="container">
+            <div class="footer_content">
+                <div class="f1">
+                    <div class="f1_1">
+                        <p class="p">About us</p>
+                        <a href="#">CSR Policy</a>
+                        <a href="#">Travel Guidelines</a>
+                        <a href="#">Career</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Loyalty program</a>
+                    </div>
+                </div>
+                <div class="f1">
+                    <div class="f1_2">
+                        <p class="p">Activity</p>
+                        <a href="#">Sea Adventures</a>
+                        <a href="#">Pipar Archar</a>
+                        <a href="#">Gyrocopter</a>
+                        <a href="#">Hot Air Balloon Ride</a>
+                        <a href="#">Desert Adventures</a>
+                        <a href="#">Kayaking Trips</a>
+                    </div>
+                </div>
+                <div class="f1">
+                    <div class="f1_3">
+                        <p class="p">Services</p>
+                        <a href="#">Airline Tickets</a>
+                        <a href="#">Hotel Booking</a>
+                        <a href="#">Holiday Packages</a>
+                        <a href="#">Visa Processing</a>
+                        <a href="#">Discount Offers</a>
+                        <a href="#">Travel Insurance</a>
+                        <a href="#">Intern ational Driving Licence</a>
+                        <a href="#">Local Tourism</a>
+                        <a href="#">cruise</a>
+                    </div>
+                </div>
+                <div class="f1">
+                    <div class="f1_4">
+                        <p class="p">Need Help</p>
+                        <p>Call Us</p>
+                        <a href="#">677843469656</a>
+                        <p>Email For Us</p>
+                        <a href="#">custom@hfju.com</a>
+                        <p>Follw Us</p>
+                        <div style="color: #fff;">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer_bg1">
+        <div class="bg1_content">
+            <p class="abc1">&#169; 2021 All Right Reserved, Design & Developed Powered by AZYM</p>
+            <p class="abc2">Terms & Condition</p>
+            <p class="abc3">Privacy Policy</p>
+        </div>
+    </div>
+
+    <!-- Custom JS  -->
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
